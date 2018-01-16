@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tarantino047.makeyourowntarantino.Actividades.PeliculasPrincipales">
+
+    <ListView
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/fondo"
+        android:divider="@color/white"
+        android:dividerHeight="0.5dp"
+        android:layout_above="@+id/myt">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/myt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boton"
+        android:elevation="@android:dimen/notification_large_icon_height"
+        android:text="¡Haz  Tu  Propio  Tarantino!"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        android:textSize="26dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomix"
+    tools:context="tarantino047.makeyourowntarantino.Actividades.MakeYTarantino">
+
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:text="Establece tus criterios de dirección para formar tu pelicula: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="7dp"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+
+
+    <TextView
+        android:text="tx"
+        android:layout_marginTop="65dp"
+        android:id="@+id/texto"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+
+    <SeekBar
+        android:id="@+id/venganza"
+        style="@style/AppTheme"
+        android:layout_width="180dp"
+        android:progressTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:max="100"
+        android:pointerIcon="hand"
+        android:thumb="@android:drawable/btn_default_small" />
+
+    <TextView
+        android:text="jj"
+        android:id="@+id/seek2"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/venganza"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/violencia"
+        style="@style/AppTheme"
+        android:layout_width="180dp"
+        android:progressTint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seek2"
+        android:layout_centerHorizontal="true"
+
+        android:max="100"
+        android:pointerIcon="hand"
+        android:thumb="@android:drawable/btn_default_small" />
+
+
+
+
+
+
+
+
+    <RadioGroup
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/opciones_calidad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="87dp"
+            android:layout_height="95dp"
+            android:layout_marginRight="38dp"
+            android:background="@drawable/happy"
+            android:buttonTint="@android:color/holo_green_light" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="87dp"
+            android:layout_height="95dp"
+            android:layout_below="@+id/violencia"
+            android:background="@drawable/sad"
+            android:checked="false"
+            android:buttonTint="@android:color/holo_red_dark" />
+
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:text="Elegí la calidad actoral de la pelicula"
+        android:textSize="15dp"
+        android:layout_above="@+id/bf"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bf"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/mixboton2"
+        android:layout_width="170dp"
+        android:layout_height="92dp" />
+    <TextView
+        android:text="Presiona aquí para crear tu propia pelicula de Tarantino!"
+        android:textSize="14dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

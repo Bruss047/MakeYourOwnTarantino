@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mixresfondo2"
+    tools:context="tarantino047.makeyourowntarantino.Actividades.Resultado">
+
+
+<TextView
+    android:id="@+id/titulomix"
+    android:text="MONJA"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_margin="8dp"
+    android:textAlignment="center"
+    android:textSize="33dp"
+    android:layout_width="300dp"
+    android:layout_height="65dp" />
+
+    <TextView
+
+        android:id="@+id/sinop"
+        android:layout_marginLeft="18dp"
+        android:textSize="17dp"
+        android:padding="2dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/titulomix"
+        android:layout_width="320dp"
+        android:layout_height="196dp" />
+
+
+    <ImageView
+        android:id="@+id/star"
+        android:background="@drawable/estrella"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/sinop"
+        android:layout_centerInParent="true"
+
+
+
+        />
+    <TextView
+        android:id="@+id/puntaje"
+        android:text="5"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/critica"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp" />
+
+
+
+
+    <TextView
+
+        android:id="@+id/critica"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/star"
+        android:layout_alignLeft="@+id/titulomix"
+        android:layout_alignStart="@+id/titulomix"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/compartir"
+
+        android:layout_width="50dp"
+        android:background="@drawable/share"
+        android:layout_height="34dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/critica" />
+
+</RelativeLayout>
