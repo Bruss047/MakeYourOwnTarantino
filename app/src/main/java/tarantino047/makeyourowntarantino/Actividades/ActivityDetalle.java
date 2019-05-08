@@ -23,10 +23,11 @@ import static tarantino047.makeyourowntarantino.R.drawable.pfictionbb;
 public class ActivityDetalle extends AppCompatActivity {
 
     private TextView titulo;
+    private TextView sinopsis;
     private TextView cast;
-    private ImageView capp;
-    private RelativeLayout real;
-   int hh = R.drawable.pfictionbb;
+    private ImageView captura;
+    private RelativeLayout fondo;
+    int hh = R.drawable.pfictionbb;
 
 
 
@@ -38,7 +39,24 @@ public class ActivityDetalle extends AppCompatActivity {
         setContentView(R.layout.activity_detalle);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        final ExpandableTextView expandableTextView = (ExpandableTextView) this.findViewById(R.id.expandableTextView);
+
+        fondo=(RelativeLayout) findViewById(R.id.fondo);
+        titulo= (TextView)findViewById(R.id.nombre);
+        sinopsis= (TextView)findViewById(R.id.sinopsis);
+        captura=(ImageView)findViewById(R.id.captura);
+        cast= (TextView)findViewById(R.id.cast);
+
+
+        Bundle extras = getIntent().getExtras();
+
+        titulo.setText(extras.getString("nombre"));
+        sinopsis.setText(extras.getString("sinopsis"));
+        int background = extras.getInt("imgdetalle");
+        fondo.setBackgroundResource(background);
+        captura.setImageResource(extras.getInt("captura"));
+        cast.setText(extras.getString("cast"));
+
+        /*final ExpandableTextView expandableTextView = (ExpandableTextView) this.findViewById(R.id.expandableTextView);
         final Button buttonToggle = (Button) this.findViewById(R.id.button_toggle);
 
         expandableTextView.setExpandInterpolator(new OvershootInterpolator());
@@ -48,15 +66,15 @@ public class ActivityDetalle extends AppCompatActivity {
         titulo= (TextView)findViewById(R.id.nombre);
 
 
-        cast= (TextView)findViewById(R.id.cast);
+        //cast= (TextView)findViewById(R.id.cast);
 
-        capp= (ImageView)findViewById(R.id.captura);
+        //capp= (ImageView)findViewById(R.id.captura);
 
-        real= (RelativeLayout)findViewById(R.id.rela);
+      //  real= (RelativeLayout)findViewById(R.id.rela);
 
         Bundle extras = getIntent().getExtras();
 
-        expandableTextView.setText(extras.getString("sinopsis"));
+       // expandableTextView.setText(extras.getString("sinopsis"));
 
 
         titulo.setText(extras.getString("nombre"));
@@ -99,7 +117,7 @@ public class ActivityDetalle extends AppCompatActivity {
 
         String titulos = extras.getString("titulo");*/
 
-        //titulo.setText(titulos);
+        //titulo.setText(titulos);*/
 
 
 

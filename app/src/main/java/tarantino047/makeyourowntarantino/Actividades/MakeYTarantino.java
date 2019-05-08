@@ -29,7 +29,7 @@ public class MakeYTarantino extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_ytarantino);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         texto = (TextView) findViewById(R.id.texto);
         seek2 = (TextView) findViewById(R.id.seek2);

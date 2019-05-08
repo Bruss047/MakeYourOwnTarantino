@@ -4,8 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,9 +14,7 @@
 
 
 
-
-        <activity android:name="tarantino047.makeyourowntarantino.Actividades.SplashActivity"
-            >
+        <activity android:name=".Actividades.Activity_Principal" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,30 +23,21 @@
         </activity>
 
 
-
-        <activity
-            android:name="tarantino047.makeyourowntarantino.Actividades.ActivityDetalle"
-            android:screenOrientation="portrait"
-            android:parentActivityName="tarantino047.makeyourowntarantino.Actividades.PeliculasPrincipales" />
-
         <activity
             android:name=".Actividades.MakeYTarantino"
-            android:screenOrientation="portrait"
-            android:parentActivityName="tarantino047.makeyourowntarantino.Actividades.ActivityDetalle" />
-
+            android:parentActivityName=".Actividades.Activity_Principal" />
         <activity
             android:name=".Actividades.Resultado"
-            android:screenOrientation="portrait"
-            android:parentActivityName="tarantino047.makeyourowntarantino.Actividades.MakeYTarantino" />
-
-        <activity android:name="tarantino047.makeyourowntarantino.Actividades.PeliculasPrincipales" />
-
+            android:parentActivityName=".Actividades.MakeYTarantino"
+             />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:screenOrientation="portrait"
-            android:value="tarantino047.makeyourowntarantino.Actividades.PeliculasPrincipales" />
+            android:value="tarantino047.makeyourowntarantino.Actividades.Activity_Principal" />
 
+        <activity android:name=".Actividades.Activity_Detalle"
+            android:parentActivityName=".Actividades.Activity_Principal" ></activity>
     </application>
 
 </manifest>

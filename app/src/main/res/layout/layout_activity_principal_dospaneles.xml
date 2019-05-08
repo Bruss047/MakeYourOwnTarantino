@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:background="@drawable/fondo"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <!--
+        Este fragmento estático contiene al listado
+        -->
+        <fragment
+            android:id="@+id/fragment_listado"
+            android:name="tarantino047.makeyourowntarantino.Fragment_lista"
+            android:layout_width="100dp"
+            android:layout_marginBottom="65dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <!--
+        Este FrameLayout contendrá un fragmento dinámico con el contenido del elemento pulsado del listado
+        -->
+
+        <FrameLayout
+            android:id="@+id/framelayout_contenedor_detalle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            android:layout_weight="3" />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/myt"
+    style="?android:attr/borderlessButtonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/boton"
+    android:elevation="@android:dimen/notification_large_icon_height"
+    android:text="¡Haz  Tu  Propio  Tarantino!"
+    android:textColor="@color/white"
+    android:textSize="26dp" />
+
+
+</RelativeLayout>
+
